@@ -5,12 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Font Awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="inter-font">
-    <header>
-      <nav class="navbar">
-        <h3 class="brand">Fitness</h3>
+    <header class="header-bg">
+      <!-- Nav starts -->
+      <nav class="navbar display-flex">
+        <h3 class="brand text-orange">Fitness</h3>
+        <ul class="nav-links display-flex">
+          <li class="nav-item">
+            <a href="" class="nav-link text-primary selected-nav-item">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-primary">Service</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-primary">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-primary">About</a>
+          </li>
+          <li class="burger-menu-icon"><i class="fa-solid fa-bars"></i></li>
+        </ul>
       </nav>
+      <!-- Banner starts -->
+      <div class="banner display-flex">
+        <div class="banner-text">
+          <h1 class="banner-title text-primary">
+            Get body in <br />
+            <span class="miama">shape</span> & stay <br />
+            healthy
+          </h1>
+          <div class="banner-description text-secondary">
+            <p>
+              Do workout and eat healthy. You will get your body in shape and
+              stay healthy for a long time.
+            </p>
+          </div>
+          <button class="btn-orange text-primary">
+            Join <span class="hide">Club</span> Now!
+          </button>
+          <button class="btn-black text-primary">Download App</button>
+        </div>
+        <div class="banner-img-container">
+          <img src="images/Images 2.png" alt="" />
+          <div class="badge1">
+            <div class="ball">
+              <div class="play-icon"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div>
+              <h3 class="badge1-heading">350+</h3>
+              <p class="badge1-p">Video tutorial</p>
+            </div>
+          </div>
+          <div class="badge2">
+            <h1 class="badge2-heading text-primary">500+</h1>
+            <p class="badge2-p">Free Workout Videos</p>
+          </div>
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>

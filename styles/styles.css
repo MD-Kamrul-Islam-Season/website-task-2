@@ -1,3 +1,4 @@
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 .inter-font {
@@ -5,4 +6,239 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+@import url("https://fonts.cdnfonts.com/css/miama-nueva");
+
+@font-face {
+  font-family: "Miama Nueva";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Miama Nueva"),
+    url("https://fonts.cdnfonts.com/s/31928/miamanueva.woff") format("woff");
+}
+.miama {
+  font-family: "Miama Nueva";
+  font-weight: 100;
+}
+/* Universal styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Shared styles */
+.display-flex {
+  display: flex;
+}
+.text-primary {
+  color: rgb(255, 255, 255);
+}
+.text-secondary {
+  color: rgba(255, 255, 255, 0.5);
+}
+.text-orange {
+  color: rgb(230, 83, 60);
+}
+.btn-orange {
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 42px;
+  border: none;
+  background: rgb(230, 83, 60);
+  margin: 1.75rem 0;
+  margin-right: 0.9rem;
+}
+/* Header styles */
+.header-bg {
+  background: linear-gradient(
+    rgb(17, 17, 17),
+    rgb(62, 62, 62),
+    rgb(17, 17, 17)
+  );
+}
+/* Navbar styles */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.brand {
+  font-size: 2.25rem;
+  font-weight: 800;
+  font-style: italic;
+}
+.nav-link {
+  text-decoration: none;
+}
+.selected-nav-item {
+  border-radius: 46px;
+  background: rgb(230, 83, 60);
+  padding: 0.5rem 1.25rem;
+}
+.nav-item {
+  list-style: none;
+  margin-right: 50px;
+  font-size: 1.15rem;
+}
+.burger-menu-icon {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+/* Banner styles */
+.banner {
+  gap: 180px;
+}
+.banner-text {
+  width: 50%;
+}
+.banner-title {
+  font-size: 4.8rem;
+  font-weight: 900;
+  margin: 1.75rem 0;
+}
+.banner-description {
+  font-size: 1rem;
+  width: 80%;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
+}
+.btn-black {
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 42px;
+  border: 1px solid rgb(255, 255, 255);
+  background: transparent;
+  margin: 1.75rem 0;
+  margin-right: 0.9rem;
+}
+.banner-img-container {
+  position: relative;
+}
+.badge1 {
+  position: absolute;
+  top: 418px;
+  left: -122px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 6rem;
+  width: 12.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  backdrop-filter: blur(20px);
+  background-color: rgba(48, 48, 48, 0.54);
+}
+.badge1 > .ball {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: rgb(230, 83, 60);
+}
+.play-icon {
+  display: none;
+  color: white;
+}
+.badge1-heading {
+  color: rgb(250, 250, 249);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.badge1-p {
+  color: rgba(239, 237, 232, 0.65);
+  font-size: 1rem;
+}
+.badge2 {
+  position: absolute;
+  top: 124px;
+  left: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 6.15rem;
+  width: 12rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.badge2-heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.badge2-p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.82rem;
+}
+
+/*Responsive style for Small device */
+@media screen and (max-width: 576px) {
+  /* Nav styles */
+  .navbar {
+    padding: 50px 20px 30px;
+  }
+  .nav-item {
+    display: none;
+  }
+  .burger-menu-icon {
+    display: inline-block;
+  }
+  /* Banner styles */
+  .banner {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
+  .banner-text {
+    width: 100%;
+  }
+  .banner-title {
+    font-size: 2.25rem;
+    margin: 1.75rem 0 1.75rem 0;
+  }
+  .btn-orange {
+    padding: 1rem 2.5rem;
+    margin-right: 0.85rem;
+  }
+  .hide {
+    display: none;
+  }
+  .btn-black {
+    padding: 1rem 2rem;
+    margin-right: 0;
+  }
+  .banner-description {
+    width: 80%;
+  }
+  .ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .play-icon {
+    display: inline-block;
+  }
+  .banner-img-container {
+    margin: 0 auto;
+  }
+  .badge1 {
+    position: absolute;
+    top: 246px;
+    left: -46px;
+  }
+  .badge2 {
+    position: absolute;
+    top: 42px;
+    left: 197px;
+  }
 }

@@ -48,13 +48,17 @@
   margin: 1.75rem 0;
   margin-right: 0.9rem;
 }
+.heading-1 {
+  padding: 0.88rem 0;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.bg-dark {
+  background-color: rgb(0 0 0);
+}
 /* Header styles */
 .header-bg {
-  background: linear-gradient(
-    rgb(17, 17, 17),
-    rgb(62, 62, 62),
-    rgb(17, 17, 17)
-  );
+  background: linear-gradient(rgb(0 0 0), rgb(41 41 41), rgb(0 0 0));
 }
 /* Navbar styles */
 .navbar {
@@ -68,6 +72,7 @@
   font-weight: 800;
   font-style: italic;
 }
+
 .nav-link {
   text-decoration: none;
 }
@@ -87,7 +92,8 @@
   font-size: 1.5rem;
 }
 .navbar,
-.banner {
+.banner,
+.habits {
   max-width: 1440px;
   margin: 0 auto;
   padding-left: 150px;
@@ -180,7 +186,35 @@
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.82rem;
 }
-
+/* Change Your Habits styles */
+.habits {
+  padding-top: 6.25rem;
+}
+.habits-title-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 3.35rem;
+}
+.habits-title-container > div {
+  line-height: 1.5rem;
+}
+.habits-img-container {
+  gap: 2.5rem;
+}
+.image {
+  text-align: center;
+}
+.image > img {
+  border-radius: 50%;
+}
+.image > h4 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+.image > p {
+  line-height: 1.15rem;
+}
 /*Responsive style for Small device */
 @media screen and (max-width: 576px) {
   /* Nav styles */
@@ -240,5 +274,19 @@
     position: absolute;
     top: 42px;
     left: 197px;
+  }
+  /* Change Your Habits styles */
+  .habits {
+    padding: 0 20px 0;
+  }
+  .habits-title-container {
+    width: 100%;
+  }
+  .heading-1 {
+    font-size: 2rem;
+  }
+  .habits-img-container {
+    flex-direction: column;
+    padding: 0 40px;
   }
 }

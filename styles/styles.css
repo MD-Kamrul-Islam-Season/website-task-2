@@ -243,6 +243,68 @@
   object-position: 68% 30%;
   border-radius: 1.15rem;
 }
+/* BMI Calculator styles */
+.calculator-title-container {
+  width: 50%;
+  margin: 5rem auto;
+}
+.calculator {
+  padding: 0 11.7rem;
+  background-color: rgb(34, 34, 34);
+  gap: 11rem;
+}
+.calculate-BMI {
+  width: 50%;
+}
+.BMI-heading-1 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  padding: 3.25rem 0;
+}
+.BMI-heading-2 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  padding: 3.25rem 0 0.88rem;
+}
+.BMI-p-2 {
+  padding-bottom: 2rem;
+}
+table,
+th,
+td {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px 20px;
+  text-align: left;
+}
+input {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0.75rem 2.5rem 0.75rem 1.25rem;
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  border-style: solid;
+  background: rgba(255, 255, 255, 0.1);
+}
+#Gender,
+#Activity {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0.75rem 8.3rem 0.75rem 1.25rem;
+  margin-right: 0rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#Activity {
+  padding-right: 17.7rem;
+  margin-bottom: 0;
+  border-style: solid;
+}
+
 /*Responsive style for Small device */
 @media screen and (max-width: 576px) {
   /* Nav styles */
@@ -331,11 +393,44 @@
     padding: 1rem 7.5rem;
   }
   .run-img-container {
-    padding: 0 1.88rem 1.88rem;
+    padding: 0 1.88rem 0;
   }
   .run-img-container > img {
     object-fit: contain;
     object-position: 0% 0%;
     border-radius: 1.15rem;
+  }
+  /* BMI Calculator styles */
+  .calculator-title-container {
+    width: 80%;
+    margin: 2.5rem auto;
+  }
+  .calculator {
+    flex-direction: column;
+    padding: 0 2.5rem;
+    background-color: rgb(34, 34, 34);
+    gap: 20px;
+  }
+  .BMI-heading-1,
+  .BMI-heading-2 {
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 34px 0 23px;
+  }
+  .calculate-BMI {
+    width: 100%;
+  }
+  input {
+    padding: 0.75rem 0.1rem 0.75rem 1.25rem;
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+  }
+  #Gender,
+  #Activity {
+    padding: 0.75rem 5.9rem 0.75rem 1.25rem;
+  }
+  #Activity {
+    padding-right: 13rem;
   }
 }

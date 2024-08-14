@@ -143,6 +143,82 @@
           </div>
         </div>
       </section>
+      <!-- BMI Calculator Section -->
+      <section>
+        <div class="calculator-title-container">
+          <h2 class="heading-1 text-primary">BMI Calculator</h2>
+          <div class="text-secondary">
+            <p>
+              A BMI calculator estimates body fat by dividing weight by height
+              squared, helping assess healthy weight ranges.
+            </p>
+          </div>
+        </div>
+        <div class="calculator display-flex">
+          <div class="calculator-chart">
+            <h4 class="BMI-heading-1 text-primary">BMI Calculator Chart</h4>
+            <table>
+              <tr class="text-primary">
+                <th>BMI</th>
+                <th>Weight Status</th>
+              </tr>
+              <tr class="text-secondary">
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr class="text-secondary">
+                <td>18.5 - 24.9</td>
+                <td>Healthy</td>
+              </tr>
+              <tr class="text-secondary">
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+              </tr>
+              <tr class="text-secondary">
+                <td>30.0 - and Above</td>
+                <td>Obese</td>
+              </tr>
+            </table>
+          </div>
+          <div class="calculate-BMI">
+            <h4 class="BMI-heading-2 text-primary">BMI Calculator Chart</h4>
+            <div class="text-secondary BMI-p-2">
+              <p>
+                A BMI calculator helps assess weight-related health risks,
+                guiding individuals toward a healthy lifestyle and weight
+                management.
+              </p>
+            </div>
+            <div class="form">
+              <form action="">
+                <input type="text" placeholder="Height/cm" /><input
+                  type="text"
+                  placeholder="Weight/kg"
+                />
+                <br />
+                <input type="text" placeholder="Age" />
+                <select name="Gender" id="Gender">
+                  <option value="Sex">Sex</option>
+                  <option value="Male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+                <br />
+                <select name="Activity" id="Activity">
+                  <option id="opt" value="Activity1">
+                    Select an activity factor
+                  </option>
+                  <option id="opt" value="Activity2">Hard-working</option>
+                  <option id="opt" value="Activity3">Lazy</option>
+                </select>
+                <br />
+                <button class="btn-orange text-primary" type="submit">
+                  Calculate
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>

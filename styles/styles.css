@@ -309,13 +309,14 @@ input {
   border-style: solid;
 }
 /* Meet styles */
+.meet {
+  padding-bottom: 5rem;
+}
 .meet-title-container {
   text-align: center;
 }
 .trainer-img-container {
   padding: 20px;
-  padding-bottom: 5px;
-  margin-bottom: 5rem;
   border-radius: 18px;
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -353,7 +354,58 @@ input {
 .trainer6 {
   background-image: url("../images/trainer6.png");
 }
-
+/* Footer styles */
+footer {
+  background-color: rgb(34, 34, 34);
+}
+.footer-container {
+  margin: 0 auto;
+  padding: 4.15rem 11.88rem;
+  gap: 6.5rem;
+  width: 74%;
+}
+.footer-heading {
+  padding-bottom: 1.25rem;
+  font-size: 4.4rem;
+  font-weight: 800;
+  font-style: italic;
+}
+.footer-p1 {
+  line-height: 25px;
+}
+.footer-div1 {
+  width: 50%;
+}
+.footer-div2 {
+  width: 20%;
+  line-height: 50px;
+}
+.footer-p2 {
+  font-size: 1.5rem;
+}
+.footer-p3 {
+  font-size: 1.25rem;
+}
+.footer-div3 {
+  width: 20%;
+  line-height: 50px;
+}
+.footer-h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.footer-hr {
+  width: 74%;
+  margin: 0 auto;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.footer-last {
+  width: 22%;
+  margin: 2.3rem auto;
+  margin-bottom: 0;
+  padding-bottom: 2.3rem;
+}
 /*Responsive style for Small device */
 @media screen and (max-width: 576px) {
   /* Nav styles */
@@ -489,11 +541,12 @@ input {
   }
   .meet {
     padding: 20px;
+    padding-bottom: 70px;
   }
   .row {
     flex-direction: column;
-    gap: 5px;
-    margin-bottom: 20px;
+    gap: 1px;
+    margin-bottom: 0;
   }
   .trainer1,
   .trainer2,
@@ -504,5 +557,32 @@ input {
     margin: 20px 0;
     width: 100%;
     height: 272px;
+  }
+  /* Footer styles */
+  .footer-container {
+    flex-direction: column;
+    padding: 2.75rem 1.25rem 4.15rem;
+    gap: 2rem;
+    width: 90%;
+  }
+  .footer-div1 {
+    width: 100%;
+  }
+  .footer-div2 {
+    width: 100%;
+    line-height: 50px;
+  }
+  .footer-container > .footer-div3 {
+    width: 100%;
+    line-height: 50px;
+  }
+  .footer-hr {
+    width: 90%;
+  }
+  .footer-last {
+    width: 70%;
+    margin: 2.3rem auto;
+    margin-bottom: 0;
+    padding-bottom: 2.3rem;
   }
 }
